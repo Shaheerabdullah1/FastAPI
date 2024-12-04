@@ -2,15 +2,15 @@ from fastapi import FastAPI
 
 
 #created the instance
-app = FastAPI()
+myapp = FastAPI()
 
 #how to start the server
-@app.get('/')
+@myapp.get('/')
 def index():
     return {'data' : {'name':'Shaheer'}}
 
 #how to start the server with custom route
-@app.get('/about')
-def about():
+@myapp.get('/about')
+def about_page():
     return {'data' : 'about-page'}
 
